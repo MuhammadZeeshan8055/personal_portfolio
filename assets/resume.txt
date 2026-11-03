@@ -1,0 +1,2 @@
+Replace this file with your real resume as assets/resume.pdf
+Then update Download Resume / CV links if the filename differs.

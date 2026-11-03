@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M Zeeshan — Full-Stack Software Developer</title>
+  <meta name="description" content="Portfolio of M Zeeshan, Full-Stack Software Developer specializing in Laravel, PHP, MySQL, JavaScript, Vue.js, and React." />
+  <meta name="author" content="M Zeeshan" />
+  <meta name="theme-color" content="#070a10" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="M Zeeshan — Full-Stack Software Developer" />
+  <meta property="og:description" content="I build digital experiences that solve real problems — scalable web apps, APIs, and modern digital products." />
+  <meta property="og:image" content="assets/img/zeeshan.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070a10'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-family='Arial Black,sans-serif' font-size='26' font-weight='800' fill='%2310b981'%3EMZ%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=9" />
+</head>
+<body>
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div>
+      <div class="loader-mark">M<span>Z</span></div>
+      <div class="loader-bar" aria-hidden="true"><i></i></div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" data-home>M<span>Z</span></a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#home" data-nav>Home</a>
+        <a href="#about" data-nav>About</a>
+        <a href="#projects" data-nav>Projects</a>
+        <a href="#skills" data-nav>Skills</a>
+        <a href="#contact" data-nav>Contact</a>
+        <a href="https://wa.me/923185340505" class="btn btn-primary nav-cta btn-magnetic" data-config="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Let's Talk on WhatsApp">
+          <span class="nav-cta-text" aria-hidden="true">
+            <span>L</span><span>e</span><span>t</span><span>'</span><span>s</span><span>&nbsp;</span><span>T</span><span>a</span><span>l</span><span>k</span>
+          </span>
+        </a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HOME VIEW ===================== -->
+  <div id="homeView" class="view is-active">
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-orb hero-orb-1"></div>
+          <div class="hero-orb hero-orb-2"></div>
+          <div class="hero-orb hero-orb-3"></div>
+          <div class="hero-spotlight" id="heroSpotlight"></div>
+        </div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="hero-greeting" data-hero-item>
+              Hi, I'm <strong>M Zeeshan</strong>
+              <span class="availability"><i></i> Available for work</span>
+            </p>
+
+            <h1 class="hero-title" data-hero-title aria-label="I Build Digital Experiences That Solve Real Problems.">
+              <span class="line" data-hero-words="I Build Digital Experiences"></span>
+              <span class="line" data-hero-words="That Solve Real Problems."></span>
+            </h1>
+
+            <p class="hero-desc" data-hero-item>
+              Full-Stack Software Developer specializing in building scalable web applications,
+              business solutions, REST APIs, and modern digital experiences.
+            </p>
+
+            <div class="tech-strip" data-hero-item aria-label="Core technologies">
+              <span class="tech-chip">Laravel</span>
+              <span class="tech-chip">PHP</span>
+              <span class="tech-chip">MySQL</span>
+              <span class="tech-chip">JavaScript</span>
+              <span class="tech-chip">Vue.js</span>
+              <span class="tech-chip">React</span>
+              <span class="tech-chip">Alpine.js</span>
+              <span class="tech-chip">AJAX</span>
+              <span class="tech-chip">REST APIs</span>
+            </div>
+
+            <div class="hero-actions" data-hero-item>
+              <a href="#projects" class="btn btn-primary btn-magnetic">
+                View My Work
+                <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </a>
+              <a href="https://wa.me/923185340505" class="btn btn-ghost btn-magnetic" data-config="whatsapp" target="_blank" rel="noopener noreferrer">
+                Let's Talk
+                <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+
+            <div class="social-row" data-hero-item>
+              <a class="social-btn" href="https://www.linkedin.com/in/muhammad-zeeshan-b1906a21a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-config="linkedin">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1-.004-4.125 2.062 2.062 0 0 1 .004 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual" data-hero-visual>
+            <div class="photo-glow" aria-hidden="true"></div>
+            <div class="photo-frame">
+              <!-- Replace src with your personal photograph -->
+              <img src="assets/img/zeeshan.jpg" alt="M Zeeshan" width="420" height="525" />
+            </div>
+            <span class="float-badge float-badge-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.2H22l-6 4.8 2.3 7L12 16.8 5.7 21l2.3-7-6-4.8h7.6z"/></svg>
+              Laravel
+            </span>
+            <span class="float-badge float-badge-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+              Full-Stack
+            </span>
+            <span class="float-badge float-badge-3">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.7 4 3 9 3s9-1.3 9-3V5M3 11v6c0 1.7 4 3 9 3s9-1.3 9-3v-6"/></svg>
+              MySQL
+            </span>
+            <span class="float-badge float-badge-4">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+              PHP
+            </span>
+            <span class="float-badge float-badge-5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="12" r="9" stroke-dasharray="4 3"/></svg>
+              React
+            </span>
+            <span class="float-badge float-badge-6">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l9 5v8l-9 5-9-5V8l9-5z"/></svg>
+              Vue
+            </span>
+            <span class="float-badge float-badge-7">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h16M4 16h16M8 4v16M16 4v16"/></svg>
+              Alpine.js
+            </span>
+            <span class="float-badge float-badge-8">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 8h10M7 12h6M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+              AJAX
+            </span>
+            <span class="float-badge float-badge-9">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 9l3 3-3 3M13 15h3"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg>
+              APIs
+            </span>
+          </div>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">
+          <div class="mouse"></div>
+          <span>Scroll</span>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <div class="about-media" data-reveal>
+            <div class="about-photo clip-reveal">
+              <img src="assets/img/zeeshan.jpg" alt="M Zeeshan" width="480" height="600" loading="lazy" />
+            </div>
+            <div class="dev-badge">
+              <strong>Full-Stack</strong>
+              <span>Building reliable web products end to end</span>
+            </div>
+          </div>
+
+          <div class="about-copy">
+            <p class="section-label" data-reveal>About Me</p>
+            <h2 class="section-title" data-reveal>Crafting software that works in the real world.</h2>
+            <p data-reveal data-reveal-delay="1">
+              I'm a software developer passionate about transforming ideas into practical digital solutions.
+              My work focuses on backend architecture, database-driven applications, API development,
+              and creating reliable web experiences.
+            </p>
+            <p data-reveal data-reveal-delay="2">
+              I enjoy understanding business requirements, designing efficient solutions, and developing
+              software that solves real-world problems — from inventory systems and customer platforms
+              to custom APIs and modern frontends.
+            </p>
+
+            <div class="highlights" data-reveal data-reveal-delay="3">
+              <div class="highlight">
+                <strong>Backend-first</strong>
+                <span>Solid architecture &amp; clean APIs</span>
+              </div>
+              <div class="highlight">
+                <strong>Product-minded</strong>
+                <span>Business needs before buzzwords</span>
+              </div>
+              <div class="highlight">
+                <strong>Full delivery</strong>
+                <span>From schema to polished UI</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-ghost btn-magnetic" data-reveal data-reveal-delay="4">
+              Get in Touch
+              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="projects-head">
+            <div>
+              <p class="section-label" data-reveal>Featured Work</p>
+              <h2 class="section-title" data-reveal>Projects built to solve real problems.</h2>
+            </div>
+            <p class="section-lead" data-reveal data-reveal-delay="1">
+              Selected builds across e-commerce, travel, recruitment, and business systems — with live links where available.
+            </p>
+          </div>
+
+          <article class="project" data-reveal>
+            <div class="project-visual">
+              <div class="project-fan" data-fan aria-label="Hot Numbers project screenshots">
+                <button type="button" class="fan-card" data-fan-card style="--i: 0">
+                  <img src="assets/img/project-hotnumbers-account.png" alt="Hot Numbers my account dashboard" loading="lazy" />
+                  <span>My Account</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 1">
+                  <img src="assets/img/project-hotnumbers-club.png" alt="Hot Numbers coffee club subscription" loading="lazy" />
+                  <span>Coffee Club</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 2">
+                  <img src="assets/img/project-hotnumbers-events.png" alt="Hot Numbers gigs and events tickets" loading="lazy" />
+                  <span>Events</span>
+                </button>
+                <button type="button" class="fan-card is-front" data-fan-card style="--i: 3">
+                  <img src="assets/img/project-hotnumbers.jpg" alt="Hot Numbers homepage" loading="lazy" />
+                  <span>Homepage</span>
+                </button>
+              </div>
+              <p class="fan-hint">Click a screen to bring it forward</p>
+            </div>
+            <div class="project-body">
+              <div class="project-num">01</div>
+              <p class="project-cat">E-commerce / Customer Web App</p>
+              <h3 class="project-title">Hot Numbers Coffee</h3>
+              <p class="project-desc">
+                A custom e-commerce and customer experience platform for a Cambridge coffee brand —
+                covering online shopping, subscriptions, table booking, and events in one faster,
+                purpose-built application.
+              </p>
+              <p class="project-problem"><strong>Problem:</strong> The previous WordPress site was slow and hard to extend for commerce and day-to-day customer flows.</p>
+              <p class="project-meta"><strong>Role:</strong> <span>Frontend and backend development — rebuilding the experience on a custom CodeIgniter stack</span></p>
+              <ul class="feature-list">
+                <li>Online shop with product browsing and checkout</li>
+                <li>Coffee Club subscriptions and gift options</li>
+                <li>Gigs &amp; events listing with ticket purchase</li>
+                <li>Customer account area for orders, subscriptions, and payments</li>
+                <li>Payment gateway integration</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">CodeIgniter</span><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">E-commerce</span>
+              </div>
+              <div class="project-links">
+                <a href="https://hotnumberscoffee.co.uk/" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer">Live Site <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project is-alt" data-reveal>
+            <div class="project-visual">
+              <div class="project-fan" data-fan aria-label="Dhothar project screenshots">
+                <button type="button" class="fan-card" data-fan-card style="--i: 0">
+                  <img src="assets/img/project-dhothar-admin-dark.png" alt="Dark admin dashboard" loading="lazy" />
+                  <span>Dark admin</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 1">
+                  <img src="assets/img/project-dhothar-admin.jpg" alt="Recruitment admin dashboard" loading="lazy" />
+                  <span>Recruit admin</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 2">
+                  <img src="assets/img/project-dhothar-dig-admin.png" alt="DIG travel admin panel" loading="lazy" />
+                  <span>DIG admin</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 3">
+                  <img src="assets/img/project-dhothar-recruitment.jpg" alt="Recruitment website" loading="lazy" />
+                  <span>Recruitment</span>
+                </button>
+                <button type="button" class="fan-card is-front" data-fan-card style="--i: 4">
+                  <img src="assets/img/project-dhothar.jpg" alt="Travel website" loading="lazy" />
+                  <span>Travel site</span>
+                </button>
+              </div>
+              <p class="fan-hint">Click a screen to bring it forward</p>
+            </div>
+            <div class="project-body">
+              <div class="project-num">02</div>
+              <p class="project-cat">Travel &amp; Recruitment Platforms</p>
+              <h3 class="project-title">Dhothar International</h3>
+              <p class="project-desc">
+                A dual-platform web system for Dhothar International — a manpower recruitment portal and a travel &amp; tour
+                website — with custom admin panels to manage office operations, services, and day-to-day workflows.
+              </p>
+              <p class="project-problem"><strong>Problem:</strong> The business needed separate public sites for recruitment and travel, plus internal tools to run office work in one connected stack.</p>
+              <p class="project-meta"><strong>Role:</strong> <span>Full-stack development — Laravel APIs, Vue.js interfaces, MySQL data models, and admin panel builds</span></p>
+              <ul class="feature-list">
+                <li>Recruitment / manpower agency portal</li>
+                <li>Travel &amp; tour booking experience</li>
+                <li>Admin dashboards with case KPIs, filters, and charts</li>
+                <li>Office modules: attendance, ledger, accounts, visitors</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Laravel</span><span class="tag">Vue.js</span><span class="tag">MySQL</span><span class="tag">Admin Panel</span>
+              </div>
+              <div class="project-links">
+                <a href="https://dhotharinternational.com/" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer">Main Site <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+                <a href="https://dhotharinternational.com/dhothar_international_recruitment/" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Recruitment</a>
+                <a href="https://dhotharinternational.com/dhothar_travel/" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Travel</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-visual">
+              <div class="project-fan" data-fan aria-label="Mini Marvels project screenshots">
+                <button type="button" class="fan-card" data-fan-card style="--i: 0">
+                  <img src="assets/img/project-minimarvels-admin.png" alt="Mini Marvels admin dashboard" loading="lazy" />
+                  <span>Admin panel</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 1">
+                  <img src="assets/img/project-minimarvels-account.jpg" alt="Mini Marvels customer account" loading="lazy" />
+                  <span>My Account</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 2">
+                  <img src="assets/img/project-minimarvels-filters.jpg" alt="Mini Marvels shop filters" loading="lazy" />
+                  <span>Shop filters</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 3">
+                  <img src="assets/img/project-minimarvels-shop.jpg" alt="Mini Marvels product catalog" loading="lazy" />
+                  <span>Shop</span>
+                </button>
+                <button type="button" class="fan-card is-front" data-fan-card style="--i: 4">
+                  <img src="assets/img/project-minimarvels-home.png" alt="Mini Marvels homepage" loading="lazy" />
+                  <span>Homepage</span>
+                </button>
+              </div>
+              <p class="fan-hint">Click a screen to bring it forward</p>
+            </div>
+            <div class="project-body">
+              <div class="project-num">03</div>
+              <p class="project-cat">E-commerce / Kids Toys</p>
+              <h3 class="project-title">Mini Marvels</h3>
+              <p class="project-desc">
+                A playful e-commerce store for kids’ toys — product catalog, filtered shopping, customer accounts,
+                wishlist/cart flows, and an admin panel to manage orders, products, and store content.
+              </p>
+              <p class="project-problem"><strong>Problem:</strong> A toy retailer needed a branded online shop with easy browsing by age/category and tools to run catalog and orders day to day.</p>
+              <p class="project-meta"><strong>Role:</strong> <span>Full-stack development — Laravel backend, Alpine.js UI interactions, and MySQL data layer</span></p>
+              <ul class="feature-list">
+                <li>Storefront homepage, categories, and product catalog</li>
+                <li>Shop filters by category, age range, and price</li>
+                <li>Customer account dashboard for orders and addresses</li>
+                <li>Admin panel for products, orders, revenue, and CMS pages</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Laravel</span><span class="tag">Alpine.js</span><span class="tag">MySQL</span><span class="tag">E-commerce</span>
+              </div>
+              <div class="project-links">
+                <a href="https://minimarvels.com.pk/" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer">Live Site <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project is-alt" data-reveal>
+            <div class="project-visual">
+              <div class="project-fan" data-fan aria-label="POS system screenshots">
+                <button type="button" class="fan-card" data-fan-card style="--i: 0">
+                  <img src="assets/img/project-pos-reports.png" alt="POS reports screen" loading="lazy" />
+                  <span>Reports</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 1">
+                  <img src="assets/img/project-pos-sales.png" alt="POS new bill / sales screen" loading="lazy" />
+                  <span>New bill</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 2">
+                  <img src="assets/img/project-pos-dark.png" alt="POS dashboard dark mode" loading="lazy" />
+                  <span>Dark mode</span>
+                </button>
+                <button type="button" class="fan-card is-front" data-fan-card style="--i: 3">
+                  <img src="assets/img/project-pos-light.png" alt="POS dashboard light mode" loading="lazy" />
+                  <span>Dashboard</span>
+                </button>
+              </div>
+              <p class="fan-hint">Click a screen to bring it forward</p>
+            </div>
+            <div class="project-body">
+              <div class="project-num">04</div>
+              <p class="project-cat">POS &amp; Inventory</p>
+              <h3 class="project-title">Shop POS System</h3>
+              <p class="project-desc">
+                A personal Point of Sale and inventory system I built for shop operations — billing, stock,
+                customers, payments, and reports. If you need a similar POS for your store, I can set it up and customize it for you.
+              </p>
+              <p class="project-problem"><strong>Built for:</strong> Retail shops that need fast billing, stock control, customer udhaar/credit tracking, and clear daily reports — without heavy SaaS tools.</p>
+              <p class="project-meta"><strong>Role:</strong> <span>Solo full-stack build — ready to deploy and adapt for other shops</span></p>
+              <ul class="feature-list">
+                <li>POS billing with product search, cart, discounts, and cash/bank payments</li>
+                <li>Products, inventory, low-stock alerts, and customer management</li>
+                <li>Customer udhaar (credit), bank accounts, and payment history</li>
+                <li>Reports for sales, purchases, profit, stock, and receivables</li>
+                <li>Light &amp; dark mode shopkeeper dashboard</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Laravel</span><span class="tag">Alpine.js</span><span class="tag">MySQL</span><span class="tag">POS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://wa.me/923185340505" class="btn btn-primary btn-magnetic" data-config="whatsapp" target="_blank" rel="noopener noreferrer">Need a POS? Let's Talk <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-visual">
+              <div class="project-fan" data-fan aria-label="NH and Sons project screenshots">
+                <button type="button" class="fan-card" data-fan-card style="--i: 0">
+                  <img src="assets/img/project-nhsons-login.png" alt="NH and Sons login portal" loading="lazy" />
+                  <span>Staff login</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 1">
+                  <img src="assets/img/project-nhsons-sale.png" alt="NH and Sons sale order billing" loading="lazy" />
+                  <span>Bill creation</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 2">
+                  <img src="assets/img/project-nhsons-dashboard.png" alt="NH and Sons stock management dashboard" loading="lazy" />
+                  <span>Dashboard</span>
+                </button>
+                <button type="button" class="fan-card is-front" data-fan-card style="--i: 3">
+                  <img src="assets/img/project-nhsons-shop.jpg" alt="NH and Sons ecommerce storefront" loading="lazy" />
+                  <span>E-commerce</span>
+                </button>
+              </div>
+              <p class="fan-hint">Click a screen to bring it forward</p>
+            </div>
+            <div class="project-body">
+              <div class="project-num">05</div>
+              <p class="project-cat">Stock, Billing &amp; E-commerce</p>
+              <h3 class="project-title">NH &amp; Sons</h3>
+              <p class="project-desc">
+                A full business platform for NH &amp; Sons — stock and ledger management with digital billing,
+                staff portals, and a public e-commerce storefront with CMS controls for banners, footer, logo, and listings.
+              </p>
+              <p class="project-problem"><strong>Problem:</strong> Stock was hard to track and bills were written by hand. The business needed a digitized system for inventory, sales, accounts, and online product listing — with proper reports and role-based staff access.</p>
+              <p class="project-meta"><strong>Role:</strong> <span>Full-stack development — Laravel, MySQL, and AJAX-powered admin + storefront workflows</span></p>
+              <ul class="feature-list">
+                <li>Stock, categories, suppliers, customers, and ledger management</li>
+                <li>Digital bill / sale order creation with payment methods and history</li>
+                <li>Accounts reports, bank balances, notifications, and sales tracking</li>
+                <li>Role-based permissions and separate portals for staff users</li>
+                <li>E-commerce listing site with admin control for banners, logo, footer, and shop content</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">AJAX</span><span class="tag">E-commerce</span>
+              </div>
+              <div class="project-links">
+                <a href="https://nhsons.com/" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer">Live Site <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project is-alt" data-reveal>
+            <div class="project-visual">
+              <div class="project-fan" data-fan aria-label="Federal Group project screenshots">
+                <button type="button" class="fan-card" data-fan-card style="--i: 0">
+                  <img src="assets/img/project-federal-login.jpg" alt="Federal Manpower portal login" loading="lazy" />
+                  <span>Portal login</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 1">
+                  <img src="assets/img/project-federal-admin-dark.jpg" alt="Federal admin operations dark mode" loading="lazy" />
+                  <span>Admin dark</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 2">
+                  <img src="assets/img/project-federal-admin.jpg" alt="Federal admin operations center" loading="lazy" />
+                  <span>Admin portal</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 3">
+                  <img src="assets/img/project-federal-jobs.png" alt="Federal overseas jobs listings" loading="lazy" />
+                  <span>Jobs</span>
+                </button>
+                <button type="button" class="fan-card is-front" data-fan-card style="--i: 4">
+                  <img src="assets/img/project-federal-home.jpg" alt="Federal Manpower homepage" loading="lazy" />
+                  <span>Homepage</span>
+                </button>
+              </div>
+              <p class="fan-hint">Click a screen to bring it forward</p>
+            </div>
+            <div class="project-body">
+              <div class="project-num">06</div>
+              <p class="project-cat">Manpower / Multi-Portal System</p>
+              <h3 class="project-title">Federal Group of Companies</h3>
+              <p class="project-desc">
+                A manual-to-automated overseas recruitment platform with three connected portals —
+                candidates, employers, and admin operations — so applications, jobs, documents, and workflows stay in one system.
+              </p>
+              <p class="project-problem"><strong>Problem:</strong> Recruitment work was mostly manual. The company needed digital portals for candidates and employers, plus a secure admin system for cases, HR, accounts, and reporting.</p>
+              <p class="project-meta"><strong>Role:</strong> <span>Full-stack development — public site, client/employer portals, and admin operations center</span></p>
+              <ul class="feature-list">
+                <li><strong>Client portal:</strong> register, apply for jobs, track status, and manage payments</li>
+                <li><strong>Employer portal:</strong> send requests and post job vacancies</li>
+                <li><strong>Admin portal:</strong> clients, care-offs, universities, countries, accounts, and HR</li>
+                <li>Reports, PDF generation, check-in/out attendance, and secure document handling</li>
+                <li>Role-based access across staff and portal users</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">AJAX</span><span class="tag">Multi-Portal</span>
+              </div>
+              <div class="project-links">
+                <a href="https://federalmanpower.com/" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer">
+                  Live Site
+                  <span class="btn-soon">Coming Soon</span>
+                  <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-ghost btn-magnetic">Discuss a Similar Build</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-visual">
+              <div class="project-fan" data-fan aria-label="FursGo project screenshots">
+                <button type="button" class="fan-card" data-fan-card style="--i: 0">
+                  <img src="assets/img/project-fursgo-admin.png" alt="FursGo admin login" loading="lazy" />
+                  <span>Admin</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 1">
+                  <img src="assets/img/project-fursgo-groomer.jpg" alt="FursGo groomer profile" loading="lazy" />
+                  <span>Groomer</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 2">
+                  <img src="assets/img/project-fursgo-space.jpg" alt="FursGo grooming space listing" loading="lazy" />
+                  <span>Space</span>
+                </button>
+                <button type="button" class="fan-card" data-fan-card style="--i: 3">
+                  <img src="assets/img/project-fursgo-search.png" alt="FursGo groomer search results" loading="lazy" />
+                  <span>Search</span>
+                </button>
+                <button type="button" class="fan-card is-front" data-fan-card style="--i: 4">
+                  <img src="assets/img/project-fursgo-home.jpg" alt="FursGo homepage" loading="lazy" />
+                  <span>Homepage</span>
+                </button>
+              </div>
+              <p class="fan-hint">Click a screen to bring it forward</p>
+            </div>
+            <div class="project-body">
+              <div class="project-num">07</div>
+              <p class="project-cat">Pet Care Marketplace</p>
+              <h3 class="project-title">FursGo</h3>
+              <p class="project-desc">
+                A pet care booking platform for trusted grooming — owners can search services, book appointments,
+                and connect with groomers or mobile/home-visit options, with admin tools for platform management.
+              </p>
+              <p class="project-problem"><strong>Focus:</strong> Make pet grooming easy to find and book — from full spa treatments to quick tidy-ups and at-home mobile grooming.</p>
+              <p class="project-meta"><strong>Role:</strong> <span>Full-stack development — Laravel backend with Alpine.js interactive UI</span></p>
+              <ul class="feature-list">
+                <li><strong>Full Groom</strong> — bath, trim, blow-dry, and essential hygiene</li>
+                <li><strong>Bath &amp; Tidy</strong> — a quick refresh between full grooms</li>
+                <li><strong>Nail Trim</strong> — careful nail care focused on comfort and safety</li>
+                <li><strong>Pet Spa</strong> — coat and skin treatments to nourish &amp; refresh</li>
+                <li><strong>Mobile Grooming</strong> — grooming at home for a stress-free experience</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Laravel</span><span class="tag">Alpine.js</span><span class="tag">MySQL</span><span class="tag">Marketplace</span>
+              </div>
+              <div class="project-links">
+                <span class="btn btn-primary" style="cursor: default; pointer-events: none;">
+                  Coming Soon
+                </span>
+                <a href="https://wa.me/923185340505" class="btn btn-ghost btn-magnetic" data-config="whatsapp" target="_blank" rel="noopener noreferrer">
+                  Let's Talk
+                  <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section" id="skills">
+        <div class="container">
+          <p class="section-label" data-reveal>Skills &amp; Technologies</p>
+          <h2 class="section-title" data-reveal>Tools I use to ship reliable software.</h2>
+          <p class="section-lead" data-reveal data-reveal-delay="1">
+            Practical capabilities across backend, frontend, databases, and delivery workflow — not vanity percentages.
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill-card" data-reveal>
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg>
+                Backend
+              </h3>
+              <div class="skill-list">
+                <span class="skill-pill">PHP</span>
+                <span class="skill-pill">Laravel</span>
+                <span class="skill-pill">CodeIgniter</span>
+                <span class="skill-pill">REST API Development</span>
+                <span class="skill-pill">MVC Architecture</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-reveal data-reveal-delay="1">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h14"/></svg>
+                Frontend
+              </h3>
+              <div class="skill-list">
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">Vue.js</span>
+                <span class="skill-pill">React</span>
+                <span class="skill-pill">Alpine.js</span>
+                <span class="skill-pill">AJAX</span>
+                <span class="skill-pill">HTML5</span>
+                <span class="skill-pill">CSS3</span>
+                <span class="skill-pill">Tailwind CSS</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-reveal data-reveal-delay="2">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+                Database
+              </h3>
+              <div class="skill-list">
+                <span class="skill-pill">MySQL</span>
+                <span class="skill-pill">Database Design</span>
+                <span class="skill-pill">SQL Optimization</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-reveal data-reveal-delay="1">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                Tools &amp; Workflow
+              </h3>
+              <div class="skill-list">
+                <span class="skill-pill">Git</span>
+                <span class="skill-pill">GitHub</span>
+                <span class="skill-pill">Composer</span>
+                <span class="skill-pill">npm</span>
+                <span class="skill-pill">Postman</span>
+                <span class="skill-pill">Docker</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-reveal data-reveal-delay="2">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                Design
+              </h3>
+              <div class="skill-list">
+                <span class="skill-pill">Responsive Web Design</span>
+                <span class="skill-pill">UI Implementation</span>
+                <span class="skill-pill">Figma</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-reveal data-reveal-delay="3">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                Focus Areas
+              </h3>
+              <div class="skill-list">
+                <span class="skill-pill">Scalable web apps</span>
+                <span class="skill-pill">Business systems</span>
+                <span class="skill-pill">API integrations</span>
+                <span class="skill-pill">Problem-solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container">
+          <p class="section-label" data-reveal>Contact</p>
+          <h2 class="section-title" data-reveal>Have a Project in Mind? Let's Build Something Great.</h2>
+
+          <div class="contact-wrap contact-wrap-solo">
+            <div class="contact-info" data-reveal>
+              <p>
+                Tell me about the product, system, or API you want to build. Reach out by email or LinkedIn — I typically respond within 1–2 business days.
+              </p>
+
+              <div class="contact-channels">
+                <a class="channel" href="mailto:muhammadzeeeshan8055@gmail.com" data-config="email">
+                  <span class="channel-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                  </span>
+                  <span>
+                    <small>Email</small>
+                    <strong data-email-label>muhammadzeeeshan8055@gmail.com</strong>
+                  </span>
+                </a>
+                <a class="channel" href="https://www.linkedin.com/in/muhammad-zeeshan-b1906a21a/" target="_blank" rel="noopener noreferrer" data-config="linkedin">
+                  <span class="channel-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1-.004-4.125 2.062 2.062 0 0 1 .004 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  </span>
+                  <span>
+                    <small>LinkedIn</small>
+                    <strong>linkedin.com/in/muhammad-zeeshan</strong>
+                  </span>
+                </a>
+                <a class="channel" href="https://wa.me/923185340505" target="_blank" rel="noopener noreferrer" data-config="whatsapp">
+                  <span class="channel-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.3c-.28-.14-1.65-.81-1.9-.9-.26-.1-.44-.14-.63.14-.18.27-.72.9-.88 1.08-.16.18-.33.2-.6.07-.28-.14-1.17-.43-2.23-1.37-.82-.73-1.38-1.64-1.54-1.91-.16-.27-.02-.42.12-.55.13-.13.28-.33.42-.5.14-.16.18-.28.28-.47.09-.18.05-.35-.02-.49-.07-.14-.63-1.51-.86-2.07-.23-.55-.46-.47-.63-.48h-.54c-.18 0-.48.07-.73.35-.26.27-.96.94-.96 2.3s.99 2.67 1.12 2.85c.14.18 1.95 2.98 4.72 4.18 1.76.76 2.13.84 2.9.7.44-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.11-.25-.18-.53-.32zM12.05 21.8h-.01a9.8 9.8 0 0 1-4.98-1.36l-.36-.21-3.7.97 1-3.61-.24-.37a9.76 9.76 0 0 1-1.5-5.2 9.8 9.8 0 0 1 9.8-9.78c2.62 0 5.08 1.02 6.93 2.87a9.73 9.73 0 0 1 2.87 6.93 9.8 9.8 0 0 1-9.81 9.76zm8.36-18.16A11.7 11.7 0 0 0 12.04 0C5.45 0 .1 5.34.1 11.92c0 2.1.55 4.15 1.6 5.96L0 24l6.28-1.65a11.9 11.9 0 0 0 5.75 1.46h.01c6.59 0 11.94-5.35 11.94-11.93 0-3.19-1.24-6.18-3.5-8.44z"/></svg>
+                  </span>
+                  <span>
+                    <small>WhatsApp</small>
+                    <strong>0318 5340505</strong>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" data-reveal>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="logo" data-home>M<span>Z</span></a>
+            <p>Full-Stack Software Developer building scalable applications, APIs, and digital products that solve real problems.</p>
+          </div>
+          <div>
+            <h4>Navigate</h4>
+            <div class="footer-links">
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#skills">Skills</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+          <div>
+            <h4>Connect</h4>
+            <div class="footer-links">
+              <a href="https://www.linkedin.com/in/muhammad-zeeshan-b1906a21a/" target="_blank" rel="noopener noreferrer" data-config="linkedin">LinkedIn</a>
+              <a href="mailto:muhammadzeeeshan8055@gmail.com" data-config="email">Email</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year"></span> M Zeeshan. All rights reserved.</p>
+          <button type="button" class="back-top" id="backTop">
+            Back to top
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/app.js?v=6" defer></script>
+</body>
+</html>

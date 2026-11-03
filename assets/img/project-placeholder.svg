@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" fill="none">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1200" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f1522"/>
+      <stop offset="1" stop-color="#151d2e"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#1e293b" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="url(#pbg)"/>
+  <rect width="1200" height="750" fill="url(#grid)" opacity="0.5"/>
+  <rect x="80" y="80" width="1040" height="590" rx="16" fill="#0a0e17" stroke="#1e293b" stroke-width="2"/>
+  <rect x="110" y="110" width="180" height="14" rx="7" fill="#10b981" opacity="0.5"/>
+  <rect x="110" y="150" width="320" height="10" rx="5" fill="#334155"/>
+  <rect x="110" y="180" width="260" height="10" rx="5" fill="#1e293b"/>
+  <rect x="110" y="240" width="480" height="280" rx="12" fill="#12182a" stroke="#1e293b"/>
+  <rect x="620" y="240" width="460" height="130" rx="12" fill="#12182a" stroke="#1e293b"/>
+  <rect x="620" y="390" width="460" height="130" rx="12" fill="#12182a" stroke="#1e293b"/>
+  <text x="600" y="700" text-anchor="middle" fill="#475569" font-family="system-ui,sans-serif" font-size="18" letter-spacing="1">PROJECT SCREENSHOT PLACEHOLDER</text>
+</svg>
